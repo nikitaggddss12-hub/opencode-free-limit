@@ -1,5 +1,5 @@
 {
-  "name": "opencode-free-limit-fix",
+  "name": "opencode-unlimited",
   "version": "1.0.0",
   "description": "Removes the \"free limit reached\" card in OpenCode Desktop and disables its auto-updater",
   "license": "MIT",
