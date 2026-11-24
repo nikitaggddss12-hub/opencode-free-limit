@@ -6,6 +6,9 @@
 [![Platform](https://img.shields.io/badge/platform-Windows-0078D6?logo=windows)](https://github.com/nikitaggddss12-hub/opencode-unlimited)
 [![Node](https://img.shields.io/badge/node-%3E%3D22-339933?logo=node.js&logoColor=white)](package.json)
 [![OpenCode](https://img.shields.io/badge/OpenCode%20Desktop-2.4.1-black)](https://opencode.ai)
+[![CI](https://github.com/nikitaggddss12-hub/opencode-unlimited/actions/workflows/ci.yml/badge.svg)](https://github.com/nikitaggddss12-hub/opencode-unlimited/actions/workflows/ci.yml)
+
+🇬🇧 [English version](README.en.md)
 
 Плашка «Достигнут бесплатный лимит» перекрывает поле ввода, висит поверх чата и
 возвращается после каждого обновления приложения. Этот репозиторий убирает её
@@ -97,7 +100,20 @@ scripts/
   remove-free-limit.cjs  — убирает карточку «Достигнут бесплатный лимит»
   disable-autoupdate.cjs — отключает проверку обновлений
   scan.mjs               — ищет компонент плашки в app.asar (для новых версий)
+test/
+  patch.test.cjs         — собирает тестовый app.asar и проверяет все скрипты
 ```
+
+## 🧪 Разработка
+
+```bash
+npm test
+```
+
+Тест собирает синтетический `app.asar` с той же структурой (смещения, SHA-256 в
+заголовке) и проверяет, что `--dry-run` ничего не пишет, оба патча не меняют размер
+файла, хеш в заголовке пересчитывается, повторный запуск ничего не делает, а чужая
+версия приложения остаётся нетронутой. CI гоняет это на Linux и Windows с Node 22 и 24.
 
 ## ⭐ Поддержка
 

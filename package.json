@@ -6,6 +6,7 @@
   "author": "nikitaggddss12",
   "scripts": {
     "check": "node scripts/check.cjs",
+    "test": "node test/patch.test.cjs",
     "free-limit": "node scripts/remove-free-limit.cjs",
     "free-limit:dry": "node scripts/remove-free-limit.cjs --dry-run",
     "no-autoupdate": "node scripts/disable-autoupdate.cjs",
