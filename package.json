@@ -1,9 +1,25 @@
 {
-  "name": "opencode-unlimited",
+  "name": "opencode-free-limit",
   "version": "1.0.0",
   "description": "Removes the \"free limit reached\" card in OpenCode Desktop and disables its auto-updater",
   "license": "MIT",
   "author": "nikitaggddss12",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikitaggddss12-hub/opencode-free-limit.git"
+  },
+  "homepage": "https://github.com/nikitaggddss12-hub/opencode-free-limit#readme",
+  "bugs": {
+    "url": "https://github.com/nikitaggddss12-hub/opencode-free-limit/issues"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-desktop",
+    "asar",
+    "electron",
+    "patch",
+    "free-limit"
+  ],
   "scripts": {
     "check": "node scripts/check.cjs",
     "test": "node test/patch.test.cjs",
