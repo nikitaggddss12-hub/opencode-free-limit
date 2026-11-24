@@ -1,0 +1,20 @@
+{
+  "name": "opencode-free-limit-fix",
+  "version": "1.0.0",
+  "description": "Removes the \"free limit reached\" card in OpenCode Desktop and disables its auto-updater",
+  "license": "MIT",
+  "author": "nikitaggddss12",
+  "scripts": {
+    "check": "node scripts/check.cjs",
+    "free-limit": "node scripts/remove-free-limit.cjs",
+    "free-limit:dry": "node scripts/remove-free-limit.cjs --dry-run",
+    "no-autoupdate": "node scripts/disable-autoupdate.cjs",
+    "scan": "node scripts/scan.mjs"
+  },
+  "devDependencies": {
+    "@electron/asar": "^4.3.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
